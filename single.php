@@ -21,6 +21,7 @@
 			             <?php endif; ?>
 			             <small><?php the_category(); ?></small>
 							<?php the_content(); ?>
+							<h1>Test git</h1>
 							</article>
 
 
