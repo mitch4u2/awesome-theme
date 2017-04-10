@@ -19,9 +19,18 @@
 				             </div>
 
 			             <?php endif; ?>
-			             <small><?php the_category(); ?></small>
+			             <small><?php the_category(' '); ?> || <?php the_tags();?>
+			              || <?php edit_post_link(); ?></small>
 							<?php the_content(); ?>
-							<h1>Test git</h1>
+							<hr>
+							<?php if( comments_open() ) { comments_template() ;
+
+							} else {
+								echo '<h5 class="text-center">Sorry, Comments are closed</h5>';
+							}
+
+
+							 ?>
 							</article>
 
 
