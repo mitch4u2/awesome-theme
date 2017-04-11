@@ -51,4 +51,8 @@ endif;
 
 		</div>
 
+			<div class="search_form_container">
+				<?php get_search_form(); ?>
+				</div>
+
 	</div>

@@ -23,6 +23,18 @@
 			              || <?php edit_post_link(); ?></small>
 							<?php the_content(); ?>
 							<hr>
+
+							<div class="row"></div>
+									<div class="col-xs-6 text-left" >
+					<?php next_post_link(); ?>
+				</div>
+	</div>
+
+				<div class="col-xs-6 text-right" >
+					<?php previous_post_link(); ?>
+				</div>
+
+
 							<?php if( comments_open() ) { comments_template() ;
 
 							} else {
